@@ -5,8 +5,9 @@ public class App
     public static void main( String[] args )
     {
         SOAPWebServiceService service = new SOAPWebServiceService();
-        
-        String output = service.getSOAPWebServicePort().ping("INPUT ");
+        SOAPWebService ws = service.getSOAPWebServicePort();
+        String output = ws.ping("INPUT ");
         System.out.println("Got output "+output);
+
     }
 }

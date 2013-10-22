@@ -16,12 +16,12 @@ import org.openrap.webservices.domain.Customer;
 public interface ICustomerFacadeREST {
     @POST
     @Consumes({"application/xml", "application/json"})
-    public void create(Customer entity);
+    public Customer create(Customer entity);
 
     @PUT
     @Path("{id}")
     @Consumes({"application/xml", "application/json"})
-    public void edit(@PathParam("id") Long id, Customer entity);
+    public void xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx(@PathParam("id") Long id, Customer entity);
 
     @DELETE
     @Path("{id}")

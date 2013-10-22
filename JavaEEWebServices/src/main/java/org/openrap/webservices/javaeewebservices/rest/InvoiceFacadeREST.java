@@ -31,8 +31,8 @@ public class InvoiceFacadeREST extends AbstractFacade<Invoice> {
     @POST
     @Override
     @Consumes({"application/xml", "application/json"})
-    public void create(Invoice entity) {
-        super.create(entity);
+    public Invoice create(Invoice entity) {
+        return super.create(entity);
     }
 
     @PUT

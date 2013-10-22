@@ -41,8 +41,8 @@ public class CustomerFacadeREST extends AbstractFacade<Customer> {
     @POST
     @Override
     @Consumes({"application/xml", "application/json"})
-    public void create(Customer entity) {
-        super.create(entity);
+    public Customer create(Customer entity) {
+        return super.create(entity);
     }
 
     @PUT

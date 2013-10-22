@@ -28,8 +28,8 @@ public class SOAPWebService extends AbstractFacade<Customer> {
 
     @Override
     @WebMethod
-    public void create(Customer entity) {
-        super.create(entity);
+    public Customer create(Customer entity) {
+        return super.create(entity);
     }
 
     @WebMethod
